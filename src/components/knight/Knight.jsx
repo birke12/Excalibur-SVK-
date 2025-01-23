@@ -48,9 +48,9 @@ const Knight = () => {
       const scrollTop = window.scrollY;
 
       // Update animation state based on scroll position
-      if (scrollTop < 200) {
+      if (scrollTop < 2) {
         setAnimationState("standing");
-      } else if (scrollTop >= 200) {
+      } else if (scrollTop >= 2) {
         setAnimationState("walking");
       }
 
@@ -67,7 +67,7 @@ const Knight = () => {
             if (scrollTop === lastScrollY) {
               setAnimationState("standing");
             }
-          }, 200)
+          }, 2)
         );
       }
     };

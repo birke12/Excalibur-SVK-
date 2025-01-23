@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import styles from "./quote.module.css";
 
-const Quote = ({ text, author }) => {
+const Quote = () => {
   const quoteRef = useRef(null);
 
   useEffect(() => {
@@ -37,8 +38,14 @@ const Quote = ({ text, author }) => {
   return (
     <div className={styles.quoteContainer}>
       <div ref={quoteRef} className={`${styles.quoteBox} ${styles.hidden}`}>
-        <p className={styles.quoteText}>"{text}"</p>
-        <p className={styles.quoteAuthor}>- {author}</p>
+        <p className={styles.quoteText}>
+          "Tag med Excalibur på eventyr"
+        </p>
+        <p className={styles.quoteAuthor}>
+          <Link to="/blivMedlem" className={styles.link}>
+            Bliv medlem her
+          </Link>
+        </p>
       </div>
     </div>
   );

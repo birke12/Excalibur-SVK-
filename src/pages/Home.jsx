@@ -1,5 +1,3 @@
-
-
 import Knight from "../components/knight/Knight";
 import Header from "../components/header/Header";
 import headerImg from "../assets/knightwallpaper.png";
@@ -11,7 +9,9 @@ function Home() {
       <Header
         headerImg={headerImg}
         title="Velkommen til Excalibur"
-        subTitle="Your subtitle text goes here"
+        subTitle="Viborgs største Dungeons and Dragons
+klub"
+        textInfo="Vi har en masse arrangementer som du kan læse mere om, og du kan også holde dig opdateret omkring vores mange spændende nyheder der løbende vil blive delt her på siden"
       />
       <div className="home-container">
         <div>

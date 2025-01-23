@@ -1,5 +1,5 @@
 body, html {
-  overflow-x: hidden; /* Prevent horizontal scroll for the whole page */
+ /*  overflow-x: hidden;  */
   margin: 0;
   padding: 0;
 }
@@ -70,7 +70,7 @@ body, html {
 .logo {
     height: 50px;
     margin-left: 2em;
-    margin-top: 5px;
+    margin-top: 6px;
     margin-bottom: 5px;
 }
 

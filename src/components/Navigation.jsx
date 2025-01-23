@@ -12,8 +12,11 @@ const Navigation = () => {
   };
 
   return (
-    <div className="navigation-bar" style={{ width: "100vw" }}>
-      <img className="logo" src={LogoMenu} alt="Excalibur Logo" />
+    <div className="navigation-bar" style={{ width: "100%" }}>
+      <a href="/">
+        <img className="logo" src={LogoMenu} alt="Excalibur Logo" />
+      </a>
+      {/* <img className="logo" src={LogoMenu} alt="Excalibur Logo" /> */}
 
       {/* Burger Menu Button */}
       <button
@@ -27,7 +30,7 @@ const Navigation = () => {
       {/* Navigation Links */}
       <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/arrangementer">Arrangementer</Link>
