@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* font-family: "Cinzel", serif; */
+/* font-family: "Open Sans", serif;*/
+
+
+.arrangementerContainer {
+  /* background-color: #3f3b42; */
+  background-color: #1f1e1e;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.innerContainer {
+  background-color: #3d2b2b;
+  box-sizing: border-box;
+  width: 805px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.navigationImage {
+  display: flex;
+  position: relative;
+  background-color: #3d2b2b;
+  height: 40px;
+}
+
+.arrangementerText {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  color: #C9A76B;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.arrangementImageContainer {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+/* Styling for arrimg.jpg */
+.arrangementImage {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+ /*  box-shadow: 0 5px 10px rgba(100, 154, 154, 0.5); */
+}
+
+/* Main content layout */
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+ 
+}
+
+/* Left Side: Text Container */
+.textContainer {
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  margin-right: 20px;
+  
+}
+
+.textContainer h1,
+.textContainer h2,
+.textContainer h3 {
+  color: #3f3b42;
+  margin-bottom: -15px;
+  font-family: "Cinzel", serif;
+  font-size: 23px;
+}
+
+.textContainer p {
+  margin-bottom: 35px;
+  font-family: "Open Sans", serif;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+/* Right Side: Image Container */
+.imageContainer {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+/* Individual Images */
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+@media (max-width: 1024px) {
+
+  
+  .arrangementerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .innerContainer {
+    width: 90%; 
+  }
+
+  /* .arrangementImageContainer {
+    display: ;
+  } */
+
+  .mainContent {
+    flex-direction: column; 
+   
+  }
+
+  .textContainer {
+    width: 100%; 
+    padding: 0;
+    margin-right: 10px; 
+    margin-bottom: 20px; 
+  }
+
+  .imageContainer {
+    width: 100%; 
+    display: none; 
+  }
+
+  .textContainer h1,
+.textContainer h2,
+.textContainer h3{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textContainer p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+}
+
+
+@media (max-width: 768px) {
+  .arrangementerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .innerContainer {
+    width: 100%; 
+  }
+
+ /*  .arrangementImageContainer {
+    display: none; 
+  } */
+
+  .mainContent {
+    flex-direction: column; 
+  }
+
+  .textContainer {
+    width: 100%; 
+    margin-right: 0; 
+  }
+
+  .imageContainer {
+    width: 100%; 
+    display: none; 
+  }
+
+  .textContainer h1,
+.textContainer h2,
+.textContainer h3{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textContainer p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+}

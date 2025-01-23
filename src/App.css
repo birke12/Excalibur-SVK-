@@ -1,0 +1,92 @@
+.App {
+    text-align: center; /* Center align content */
+    position: relative;
+}
+
+.main-content {
+    margin: 50px auto; /* Add space below the navigation */
+    padding: 20px;
+    max-width: 800px; /* Limit content width */
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the html and body take full height */
+html, body {
+margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.home-container {
+  min-height: 6640px; 
+ background-image: url('./assets/background-excalibur.png');
+ background-size: 100vw;
+ background-position: top center;
+ background-repeat: no-repeat;
+ background-attachment: relative;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+
+}
+
+/* .homeContainer {
+  min-height: 100vh;
+  border: 1px solid blue;
+} */
+ 
+/* .knightSection {
+  margin-top: 6440px; 
+  border: 1px solid blue;
+}
+  */
+
+ @media (max-width: 450px){
+  .home-container{
+     position: relative;
+    min-height: 100vh; 
+    height: auto;
+    
+  }
+ }
+
+ @media(max-width:1269px){
+  .home-container {
+  min-height: 2640px; 
+ background-image: url('./assets/background-excalibur.png');
+ background-size: 100vw;
+ background-position: top center;
+ background-repeat: no-repeat;
+ background-attachment: relative;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ 
+}
+ }
+
+
+ @media(max-width:1254px){
+ .home-container{
+  min-height: 4500px;
+ }
+ }
+
+
+
+
+
+

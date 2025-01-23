@@ -1,0 +1,93 @@
+.kontaktContainer {
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/kontaktbck.png') no-repeat center center fixed;
+  background-size: cover;
+  padding: 60px 20px;
+  min-height: 100vh;
+  text-align: center;
+  
+}
+
+.header {
+  font-family: "Cinzel", serif;
+  font-size: 36px;
+  color: #c9a76b;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(to bottom, #2f4a37, #243a2b);
+  width: 250px;
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.iconWrapper {
+  color: #c9a76b;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-family: "Cinzel", serif;
+  color: #c9a76b;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.card a{
+  color: #c9a76b;
+  text-decoration: none;
+  font-size: 9px;
+}
+
+.mapContainer {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+

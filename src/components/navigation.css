@@ -1,0 +1,138 @@
+body, html {
+  overflow-x: hidden; /* Prevent horizontal scroll for the whole page */
+  margin: 0;
+  padding: 0;
+}
+
+
+.navigation-bar {
+    background-color: #333; /* Dark background */
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+
+.navigation-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-right: 50px;
+    flex-wrap: wrap;
+}
+
+.navigation-bar ul li {
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.navigation-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    font-family: "Cinzel", serif;
+}
+
+.navigation-bar ul li a:hover {
+    background-color: #555;
+    color: #C9A76B;
+}
+
+/* --- Burger Menu Styles (for mobile) --- */
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transition: color 0.3s ease;
+    z-index: 1000;
+}
+
+.burger-menu.open {
+    color: #C9A76B;
+}
+
+
+.logo {
+    height: 50px;
+    margin-left: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+@media (max-width: 1100px){
+.navigation-bar ul li a{
+    font-size: 8px;
+}
+
+}
+
+/* --- Mobile View Styles (when screen width is <= 768px) --- */
+@media (max-width: 900px) {
+    .navigation-bar {
+        background-color: transparent;
+        padding: 0;
+    }
+    .logo {
+        margin: 0;
+        height: 5em;
+    }
+
+    .navigation-bar ul {
+        display: none; /* Hide horizontal navigation by default on mobile */
+        flex-direction: column;
+        align-items: flex-end;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #333;
+        width: 300px;
+        height: auto;
+        transition: right 0.3s ease;
+        padding-right: 80px;
+        padding-top: 60px;
+        z-index: 999;
+        border-radius: 15px;
+        border: 1px solid #C9A76B;
+    }
+
+    .burger-menu {
+        display: block;
+        color: #C9A76B;
+        position: fixed;
+    }
+
+    .nav-links.open {
+        right: 0;
+        display: flex;
+    }
+
+    .navigation-bar ul li {
+        margin: 15px 0;
+        
+    }
+ .navigation-bar ul li a{
+    font-size: 12px;
+ }
+  
+}
+  .navigation-bar {
+        background-color: #333;
+        padding: 0;
+    }
